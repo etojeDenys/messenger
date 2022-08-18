@@ -1,0 +1,72 @@
+@import "../../variables";
+
+.user-preview__container {
+  cursor: pointer;
+  border-bottom: 1px solid grey;
+  box-sizing: border-box;
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  @media screen and (max-width: $medium) {
+    max-width: 400px;
+  }
+  @media screen and (max-width: $small) {
+    max-width: 100%;
+  }
+}
+
+.user-preview {
+  display: flex;
+  align-items: center;
+
+  &__body {
+    text-overflow: ellipsis;
+    max-width: 280px;
+    height: 60px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    @media screen and (max-width: $large) {
+      max-width: 200px;
+    }
+  }
+
+  .user-preview__message {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 300px;
+    @media screen and (max-width: $large) {
+      max-width: 200px;
+    }
+    @media screen and (max-width: $small) {
+      max-width: 100px;
+    }
+
+  }
+
+  &__name {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.user-preview__date {
+  font-size: 13px;
+}
+
+.unread-message {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: darkslateblue;
+}
+
+.user-preview__container-notChecked{
+  align-items: center;
+}

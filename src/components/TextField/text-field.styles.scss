@@ -1,0 +1,37 @@
+@import "../../variables";
+
+
+.text-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  input {
+    border: 1px solid lightgray;
+  }
+
+  .svg-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    width: 35px;
+    height: 35px;
+    background: none;
+    border: none;
+
+    .send__svg {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: $large) {
+    .svg-btn {
+      right: 4%;
+    }
+  }
+  @media screen and (max-width: $small) {
+    .svg-btn {
+      right: 6%;
+    }
+  }
+}
