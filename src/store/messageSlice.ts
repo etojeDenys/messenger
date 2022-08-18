@@ -18,7 +18,7 @@ const initialState: IInitialState = {
         {
             displayName: 'Nazar',
             avatarSrc: nazarAvatar,
-            uid: 'nazar',
+            uid: 'nazar322228',
             isChecked: true,
             messages: [
                 {text: 'Hey how are you?', uid: 'nazar', date: new Date('2022-08-10T12:05').toString()},
@@ -101,9 +101,9 @@ const initialState: IInitialState = {
             isChecked: true,
             messages: []
         }, {
-            displayName: 'Nigger',
+            displayName: 'Hutsul from Ivano-Frankivsk',
             avatarSrc: avatar5,
-            uid: 'nigger',
+            uid: 'hutsul322228',
             isChecked: true,
             messages: []
         },
